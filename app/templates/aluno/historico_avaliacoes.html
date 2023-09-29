@@ -1,0 +1,6 @@
+<h2>Histórico de Avaliações</h2>
+<ul>
+  {% for avaliacao in historico %}
+  <li>{{ avaliacao.aula.disciplina.nome }} - Nota: {{ avaliacao.nota }}</li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Meu Site</title>
+  </head>
+  <body>
+    <h2>Dashboard</h2>
+    <ul>
+      <li>
+        <a href="{% url 'votar_na_aula' aula_id=1 %}">Votar na Aula do Dia</a>
+      </li>
+      <li><a href="{% url 'historico_aulas' %}">Histórico de Aulas</a></li>
+      <li>
+        <a href="{% url 'historico_avaliacoes' %}">Histórico de Avaliações</a>
+      </li>
+    </ul>
+  </body>
+</html>

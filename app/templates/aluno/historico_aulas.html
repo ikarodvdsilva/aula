@@ -1,0 +1,6 @@
+<h2>Histórico de Aulas</h2>
+<ul>
+  {% for aula in historico %}
+  <li>{{ aula.disciplina.nome }} - {{ aula.turma.nome }}</li>
+  {% endfor %}
+</ul>

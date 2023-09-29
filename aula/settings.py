@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-oxx68&^nu)5=4+w%j4!ey&-)0hm3*d2#b%z%3-$j@6mc4w2q9-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["128.10.190.209"]
 
 
 # Application definition
@@ -80,6 +80,7 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+LOGIN_REDIRECT_URL = "dashboard"
 
 
 # Password validation
